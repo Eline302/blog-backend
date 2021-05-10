@@ -1,3 +1,4 @@
+// 部署到服务器上的配置
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
@@ -11,13 +12,13 @@ module.exports = ({ env }) => ({
               database: env('DATABASE_NAME', 'blog'),
               // 你的服务器中的数据库的用户名和密码
               username: env('DATABASE_USERNAME', 'blog'),
-              password: env('DATABASE_PASSWORD', '123456blog'),
+              password: env('DATABASE_PASSWORD', '123456Blog+'),
           },
           options: {},
       },
   },
 });
-
+// 开发环境
 // module.exports = ({ env }) => ({
 //   defaultConnection: 'default',
 //   connections: {
